@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# YouTube Downloader with Next.js and Tailwind CSS
 
-## Getting Started
+A web application for downloading YouTube videos and audio in MP4 or MP3 formats. The app is built with **Next.js**, styled using **Tailwind CSS**, and uses **yt-dlp** for video/audio processing.
 
-First, run the development server:
+## Features
+
+- 🎥 **YouTube Metadata Fetching**: Displays video title, thumbnail, and duration before downloading.
+- 📥 **Download Options**: Allows users to download YouTube videos as MP4 or audio as MP3.
+- 🌙 **Dark Theme**: Elegant and responsive UI with a dark theme and orange accents.
+- 📱 **Responsive Design**: Optimized for mobile and desktop devices.
+
+## Screenshots
+
+![YouTube Downloader UI](preview/1.png)
+
+## Tech Stack
+
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Backend**: Node.js (API Routes)
+- **Video Processing**: `yt-dlp`
+
+## Installation
+
+**Clone this repository:**
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+**Install dependencies:**
+
+```bash
+npm install
+Start the development server:
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Open the app in your browser:
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```arduino
+http://localhost:3000
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## API Endpoints
+- `/api/metadata:` Fetches metadata (e.g., title, thumbnail) for a given YouTube video URL.
+- `/api/download:` Downloads the video or audio in the selected format.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing
+Contributions are welcome! Please follow these steps:
 
-## Learn More
+### Fork the repository.
+Create a new feature branch:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+git checkout -b feature/your-feature-name
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Commit your changes:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+git commit -m "Add your feature description"
+```
+Push to the branch:
 
-## Deploy on Vercel
+```bash
+git push origin feature/your-feature-name
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open a pull request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This project is licensed under the MIT License.
