@@ -31,13 +31,15 @@ cd your-repo-name
 
 ```bash
 npm install
-Start the development server:
 ```
+
+Start the development server:
 
 ```bash
 npm run dev
-Open the app in your browser:
 ```
+
+Open the app in your browser:
 
 ```arduino
 http://localhost:3000
